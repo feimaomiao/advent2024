@@ -17,10 +17,10 @@ def is_secure(l: List) -> bool:
             side = 1
     return True
 
-def parse(ipt:str= get_data(day=2,year=2024)) -> Iterator:
+def parse(ipt:str= get_data(day=2, year=2024)) -> Iterator:
     for lines in ipt.split("\n"):
         yield list(map(int, lines.split()))
-
+print("DAY2")
 # ! part 1
 submit(sum(is_secure(i) for i in parse()), part="a", day=2, year=2024)
 

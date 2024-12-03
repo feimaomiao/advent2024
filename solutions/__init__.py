@@ -1,3 +1,2 @@
-from .day1 import *
-from .day2 import *
-from .day3 import *
+import os, pkgutil
+__all__ = list(module for _, module, _ in pkgutil.iter_modules([os.path.dirname(__file__)]))
